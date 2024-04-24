@@ -175,3 +175,60 @@ footer p {
   color: #fff;
   font-size: 1.2rem;
 }
+
+/* Ajustes para una pantalla con ancho máximo entre 450px y 760px */
+@media screen and (min-width: 451px) and (max-width: 760px) {
+  main {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajuste en el tamaño de las columnas del grid */
+    gap: 15px; /* Reducción del espacio entre las columnas */
+    padding: 15px; /* Reducción del relleno del contenedor principal */
+  }
+
+  .burger-item,
+  .pasta-item,
+  .postre-item {
+    padding: 15px; /* Reducción del relleno de los elementos */
+  }
+
+  h1 {
+    font-size: 2rem; /* Reducción del tamaño de fuente del título principal */
+  }
+
+  h2 {
+    font-size: 1.5rem; /* Reducción del tamaño de fuente de los subtítulos */
+    margin-bottom: 20px; /* Aumento del espacio entre los subtítulos y los elementos */
+  }
+
+  footer p {
+    font-size: 1rem; /* Reducción del tamaño de fuente del texto del pie de página */
+  }
+}
+
+/* Ajustes para una pantalla con ancho máximo de 450px */
+@media screen and (max-width: 450px) {
+  main {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajuste en el tamaño de las columnas del grid */
+    gap: 10px; /* Reducción del espacio entre las columnas */
+    padding: 10px; /* Reducción del relleno del contenedor principal */
+  }
+
+  .burger-item,
+  .pasta-item,
+  .postre-item {
+    padding: 10px; /* Reducción del relleno de los elementos */
+  }
+
+  h1 {
+    font-size: 1.8rem; /* Reducción del tamaño de fuente del título principal */
+  }
+
+  h2 {
+    font-size: 1.3rem; /* Reducción del tamaño de fuente de los subtítulos */
+    margin-bottom: 15px; /* Aumento del espacio entre los subtítulos y los elementos */
+  }
+
+  footer p {
+    font-size: 0.9rem; /* Reducción del tamaño de fuente del texto del pie de página */
+  }
+}
+
